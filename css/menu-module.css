@@ -1,0 +1,18 @@
+.menu-appear-content 
+{
+    transition: 1s;
+    opacity: 1 !important;
+}
+.menu-disappears-content
+{
+    transition: 0.3s;
+    opacity: 0 !important;
+}
+.menu-open
+{
+    width: 250px;
+}
+.menu-close
+{
+    width: 0;
+}

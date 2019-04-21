@@ -1,0 +1,93 @@
+/*Barre de navigation*/
+.nav
+{
+    position:  fixed;
+    width: 100%;
+    height: 70px;
+    background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav a
+{
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #D3D3D3;
+}
+.nav a:hover
+{
+    color: #fff;
+}
+.open-btn
+{
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #fff;
+    padding-left: 15px;
+}
+/*Barre de navigation*/
+/*Barre de navigation mobile*/
+.nav-mobile
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #0F0F0F;
+    overflow-x: hidden;
+    transition: 0.3s; 
+}
+.nav-mobile a
+{
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #959595;
+    display: block;
+    opacity: 0;
+}
+.container-close-btn
+{
+  height: 70px;
+  width: 100%;
+  background-color: #253740;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.container-close-btn a
+{
+  font-size: .7em;
+  color: white;
+  padding-right: 20px;
+}
+.nav-mobile a:hover
+{
+  color: #f4efe9;
+}
+/*Barre de navigation mobile*/
+/*addEvent*/
+
+/*addEvent*/
+
+/*media queries*/
+@media (max-width:768px) {
+    .open-btn{
+        display: block;
+    }
+    .nav a{
+        display: none;
+    }
+    .nav {
+        justify-content: flex-start;
+    }
+}
+/*media queries*/
