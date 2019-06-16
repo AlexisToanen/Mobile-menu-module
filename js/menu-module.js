@@ -6,6 +6,7 @@ var app = {
 
         openBtn.addEventListener('click', app.openNav);
         closeBtn.addEventListener('click', app.closeNav);
+
     },
     openNav: function () {
         var openMenu = document.querySelector(".nav-mobile");
@@ -36,7 +37,7 @@ var app = {
             closeMenuAnim[index].classList.add('menu-disappears-content');
             closeMenuAnim[index].classList.remove('menu-appear-content');
         }
-    }
+    },
 };
 
 document.addEventListener('DOMContentLoaded', app.init);
